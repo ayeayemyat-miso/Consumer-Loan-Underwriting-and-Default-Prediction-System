@@ -1,0 +1,27 @@
+{
+  "model_type": "Random Forest",
+  "auc_roc": 0.6055673179604604,
+  "features": [
+    "emp_length_int",
+    "annual_inc",
+    "dti",
+    "loan_amount",
+    "interest_rate",
+    "term_cat",
+    "grade_cat",
+    "home_ownership_cat",
+    "lti_ratio",
+    "payment_burden",
+    "stress_burden",
+    "region",
+    "purpose_cat",
+    "total_pymnt",
+    "total_rec_prncp"
+  ],
+  "training_samples": 2730657,
+  "test_samples": 656722,
+  "default_rate": 0.36625780581387557,
+  "train_default_rate": 0.44172519653695064,
+  "test_default_rate": 0.052463599513949584,
+  "note": "No look-ahead bias - uses only payment history to date"
+}

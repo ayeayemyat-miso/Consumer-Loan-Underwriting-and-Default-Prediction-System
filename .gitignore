@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+data/
+*.csv
+models/*.pkl
+.env
+.vscode/
+*.log

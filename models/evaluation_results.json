@@ -1,0 +1,60 @@
+{
+  "model": "XGBoost",
+  "auc_roc": 0.6992608122783651,
+  "precision": 0.47764429680073833,
+  "recall": 0.9740782086881526,
+  "f1_score": 0.640980489396065,
+  "accuracy": 0.600345990116255,
+  "confusion_matrix": [
+    [
+      165021,
+      264324
+    ],
+    [
+      6432,
+      241699
+    ]
+  ],
+  "top_features": [
+    {
+      "feature": "year",
+      "importance": 0.6288435459136963
+    },
+    {
+      "feature": "recoveries",
+      "importance": 0.15110425651073456
+    },
+    {
+      "feature": "principal_paid_ratio",
+      "importance": 0.037113483995199203
+    },
+    {
+      "feature": "term_cat",
+      "importance": 0.03278592601418495
+    },
+    {
+      "feature": "pymnt_to_loan_ratio",
+      "importance": 0.03186675161123276
+    },
+    {
+      "feature": "interest_rate",
+      "importance": 0.01580367237329483
+    },
+    {
+      "feature": "recovery_rate",
+      "importance": 0.005844454281032085
+    },
+    {
+      "feature": "total_pymnt",
+      "importance": 0.004877295345067978
+    },
+    {
+      "feature": "rate_tier",
+      "importance": 0.004860693588852882
+    },
+    {
+      "feature": "installment",
+      "importance": 0.004614671692252159
+    }
+  ]
+}

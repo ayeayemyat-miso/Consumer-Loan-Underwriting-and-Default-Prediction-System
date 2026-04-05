@@ -1,0 +1,22 @@
+{
+  "model_type": "XGBoost",
+  "auc_roc": 0.6657337819569638,
+  "features": [
+    "emp_length_int",
+    "annual_inc",
+    "dti",
+    "loan_amount",
+    "interest_rate",
+    "term_cat",
+    "grade_cat",
+    "home_ownership_cat",
+    "lti_ratio",
+    "payment_burden",
+    "stress_burden",
+    "region",
+    "purpose_cat"
+  ],
+  "training_samples": 2709903,
+  "test_samples": 677476,
+  "default_rate": 0.36625780581387557
+}
