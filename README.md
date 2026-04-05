@@ -4,10 +4,13 @@
 A mortgage default prediction system designed for the Irish banking market (AIB, Bank of Ireland, Permanent TSB).  
 ## 🚀 Live Demo
 
-**🌐 Deployed on Render:** [https://your-app-name.onrender.com](https://your-app-name.onrender.com)
+**🌐 Deployed on Render:** [https://mortgage-default-prediction-system.onrender.com/](https://mortgage-default-prediction-system-1.onrender.com/)
 
 
 ## 📸 Screenshots
+![alt text](image.png)
+
+![alt text](image-1.png)
 The project includes two dashboards:
 
 ### Dashboard A: New Loan Underwriting
