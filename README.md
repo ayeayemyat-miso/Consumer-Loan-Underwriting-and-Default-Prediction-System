@@ -1,25 +1,29 @@
-﻿# Mortgage Default Prediction System
+﻿<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-blue" alt="Python">
+  <img src="https://img.shields.io/badge/Dash-2.16.1-brightgreen" alt="Dash">
+  <img src="https://img.shields.io/badge/XGBoost-2.0.3-red" alt="XGBoost">
+  <img src="https://img.shields.io/badge/IFRS%209-Compliant-blue" alt="IFRS 9">
+  <img src="https://img.shields.io/badge/Deployed-Render-purple" alt="Render">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey" alt="License">
+</p>
+markdown
+# 🏦 Consumer Loan Underwriting & Default Prediction System
 
-## 🏦 Overview
-A mortgage default prediction system designed for the Irish banking market (AIB, Bank of Ireland, Permanent TSB).  
-## 🚀 Live Demo
+A production-ready dual-dashboard system for consumer loan risk assessment, combining **Machine Learning** with **IFRS 9 rules** for transparent, regulator-friendly credit decisions.
 
-**🌐 Deployed on Render:** [https://mortgage-default-prediction-system.onrender.com/](https://mortgage-default-prediction-system-1.onrender.com/)
+## 🚀 Live Demos
 
+| Dashboard | Purpose | Link |
+|-----------|---------|------|
+| **Dashboard A** | New Loan Underwriting | [View Demo]([https://your-dashboard-a.onrender.com](https://mortgage-default-prediction-system.onrender.com/)) |
+| **Dashboard B** | Existing Loan Monitoring | [View Demo]([https://your-dashboard-b.onrender.com](https://mortgage-default-prediction-system-1.onrender.com/)) |
 
-## 📸 Screenshots
-![alt text](image.png)
-
-![alt text](image-1.png)
 The project includes two dashboards:
 
 ### Dashboard A: New Loan Underwriting
-![New Loan Underwriting Dashboard](screenshots/dashboard_a_new_loan.png)
 *Main underwriting interface with risk assessment and amortization schedule*
 
 ### Dashboard B: Existing Loan Monitoring
-
-
 The system follows **Central Bank of Ireland (CBI)** lending guidelines and demonstrates real-world credit risk modelling.
 
 ---
@@ -30,38 +34,37 @@ The system follows **Central Bank of Ireland (CBI)** lending guidelines and demo
 - Predict default probability using XGBoost
 - Grade recommendation (A–G)
 - CBI compliance checks (LTI, stress test)
-- Loan amortization schedule (1–40 years)
+- Loan amortization schedule 
 - SHAP-based risk explanation
 - Optional LTV (collateral) analysis
 - Supports multiple repayment types
 
 ### Dashboard B: Existing Loan Monitoring
-- Portfolio (batch) upload via CSV
-- Payment history analysis
-- Delinquency tracking (late payments, days past due)
-- Portfolio risk summary
-- Export results to CSV
-- No look-ahead bias (realistic modelling)
+- ✅ Hybrid AI (70% Rules / 30% ML for good borrowers)
+- ✅ Full IFRS 9 staging (Stages 1, 2, 3)
+- ✅ Dynamic delinquency adjustment (30/60/90+ DPD)
+- ✅ Payment performance tracking (ahead/behind schedule)
+- ✅ Collateral coverage & LGD adjustment
+- ✅ Portfolio batch upload via CSV
 
 ---
 
-## 📊 Model Performance
+## 🧠 Model Performance
 
-| Metric | New Loan Model | Existing Loan Model |
-|--------|---------------|---------------------|
-| AUC-ROC | 0.666 | 0.606 |
-| Recall | 97.4% | - |
-| Training Samples | ~2.7M | ~2.7M |
-| Features | 17 | 15 |
+| Model | AUC | Note |
+|-------|-----|------|
+| New Loan Model | 0.666 | Based on application data |
+| Existing Loan Model | 0.9868 | Synthetic data; real-world would be 0.65-0.80 |
+
+> ⚠️ Models trained on synthetically generated data (CTGAN) for demonstration.
 
 ---
 
-## 🏛️ Regulatory Compliance (CBI)
+## 🏛️ Regulatory Compliance
 
-- LTI ≤ 4.0 × annual income  
-- Interest rate stress test: +2%  
-- Stress burden ≤ 35% of income  
-- Maximum loan term: 30 years  
+- **CBI Guidelines**: LTI ≤ 4.0x, stress test +2% with 35% cap
+- **IFRS 9**: 3-stage ECL model (12-month → Lifetime → Write-off)
+- **Transparent**: Rule-based overrides ensure ML never violates financial logic
 
 ---
 
@@ -143,7 +146,6 @@ python app.py
 ### Existing Loan Monitoring
 
 * Single loan prediction OR
-* Upload CSV for portfolio analysis
 
 ---
 
